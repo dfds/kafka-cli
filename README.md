@@ -13,7 +13,7 @@ Locally against Kafka on Docker:
 ```bash
 docker run --rm \
   --network <DOCKER NETWORK WHERE KAFKA CAN BE REACHED> \
-  dfdsdk/kafka-cli:0.1.0 \
+  dfdsdk/kafka-cli:0.1.1 \
   kafka-topics.sh --zookeeper <zookeeper name on docker network>:2181 \
   --describe --topic <TOPIC TO DESCRIBE>
 ```
@@ -22,7 +22,7 @@ Against Kafka on Confluent Cloud - **assuming configuration file is located in ~
 ```bash
 docker run --rm \
   --volume ~/.ccloud/config:/data/config \
-  dfdsdk/kafka-cli:0.1.0 \
+  dfdsdk/kafka-cli:0.1.1 \
   kafka-topics.sh \
   --bootstrap-server <CCLOUD BOOTSTRAP SERVER AND PORT> \
   --command-config /data/config \
