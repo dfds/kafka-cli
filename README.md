@@ -4,7 +4,7 @@ Official Kafka CLI tools dockerized, running on Alpine.
 Docker image can be found on [DockerHub](https://hub.docker.com/r/dfdsdk/kafka-cli).
 
 # Version
-Currently Kafka CLI tools version 2.12-2.2.0 is included in the image.
+Currently Kafka CLI tools version 2.12-2.3.0 is included in the image.
 
 # How to use
 As an example, to describe a topic.
@@ -13,7 +13,7 @@ Locally against Kafka on Docker:
 ```bash
 docker run --rm \
   --network <DOCKER NETWORK WHERE KAFKA CAN BE REACHED> \
-  dfdsdk/kafka-cli:0.1.1 \
+  dfdsdk/kafka-cli:0.1.2 \
   kafka-topics.sh --zookeeper <zookeeper name on docker network>:2181 \
   --describe --topic <TOPIC TO DESCRIBE>
 ```
@@ -22,7 +22,7 @@ Against Kafka on Confluent Cloud - **assuming configuration file is located in ~
 ```bash
 docker run --rm \
   --volume ~/.ccloud/config:/data/config \
-  dfdsdk/kafka-cli:0.1.1 \
+  dfdsdk/kafka-cli:0.1.2 \
   kafka-topics.sh \
   --bootstrap-server <CCLOUD BOOTSTRAP SERVER AND PORT> \
   --command-config /data/config \

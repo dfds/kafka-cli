@@ -3,7 +3,7 @@
 set -o errexit
 set -o pipefail
 
-KAFKA_CLI_IMAGE=${KAFKA_CLI_IMAGE:-dfdsdk/kafka-cli:0.1.1}
+KAFKA_CLI_IMAGE=${KAFKA_CLI_IMAGE:-dfdsdk/kafka-cli:0.1.2}
 KAFKA_CONFIG=${KAFKA_CONFIG:-~/.ccloud/config}
 KAFKA_BOOTSTRAP_SERVER=${KAFKA_BOOTSTRAP_SERVER:-pkc-l9pve.eu-west-1.aws.confluent.cloud:9092}
 
