@@ -32,7 +32,7 @@ docker run --rm \
 ## Wrapper scripts
 To ease the use and not type in long docker commands each time, wrapper scripts is available under [scripts](https://github.com/dfds/kafka-cli/tree/master/scripts).
 
-For alle scripts following environment variables can be set to override defaults:
+For all scripts following environment variables can be set to override defaults:
 ```
 KAFKA_CLI_IMAGE         - Default: dfdsdk/kafka-cli:<tag>
 KAFKA_CONFIG            - Default: ~/.ccloud/config
